@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Interactive card</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card__info">
+            <div class="info">
+                <div class="card__logo">
+                    <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+                </div>
+                <div class="card__information">
+                    <div class="card__number">0000 0000 0000 0000</div>
+                    <div class="card__name">
+                        <div class="name">umid amiri</div>
+                        <div class="date">
+                             <span class="month">20</span> 
+                             /
+                              <span class="year">18</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg__card">
+                <div class="center">
+                    <p class="number">123</p>
+                </div>
+            </div>
+        </div>
+        <div class="succesfully">
+            <span><svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg></span>
+            <h1>Thank you!</h1>
+            <p>We've added your card details</p>
+            <button>Continue</button>
+        </div>
+        <div class="card__form active">
+            <form>
+                <div class="cardholder">
+                    <label>Cardholder name</label>
+                    <input type="text" placeholder="e.g. Jane Appleseed" id="name">
+                   
+                </div>
+                <div class="card">
+                    <label >Card number</label>
+                    <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="card_num" maxlength="16" minlength="16">
+                    <p class="num_error">Wrong format,numbers only</p>
+                </div>
+                <div class="exp__date">
+                    <div class="my">
+                        <label>Exp.date (mm/yy)</label>
+                        <input type="text" placeholder="mm" id="months" maxlength="2">
+                        <input type="text" placeholder="yy" id="years" maxlength="2">
+                        <p class="my_error">Can't be blank</p>
+                    </div>
+                    <div class="cvc">
+                        <label>Cvc</label>
+                        <input type="text" placeholder="e.g. 123" maxlength="3" id="cvc">
+                        <p class="cvc_error">Can't be blank</p>
+                    </div>
+                </div>
+                <button class="btn">Confirm</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
